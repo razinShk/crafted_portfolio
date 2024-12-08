@@ -1,0 +1,60 @@
+.upload-section {
+ margin: 20px 0;
+ /* width: 200px; */
+ 
+}
+.profile-section{
+ display: flex;
+}
+
+.upload-container {
+ width: 100px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ border: 2px dashed #ccc;
+ padding: 20px;
+ border-radius: 8px;
+ background-color: #f9f9f9;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.upload-container:hover {
+ background-color: #f1f1f1;
+}
+
+.upload-icon {
+ font-size: 16px;
+ color: #666;
+ margin-bottom: 10px;
+ display: inline-block;
+}
+
+.file-input {
+ display: none;
+}
+
+.file-input {
+ opacity: 0;
+ position: absolute;
+ z-index: -1;
+}
+.uploaded-images {
+ margin-top: 15px;
+ text-align: center;
+ display: flex;
+}
+
+.uploaded-image-preview {
+ max-width: 100%;
+ max-height: 300px;
+ border: 2px solid #ddd;
+ border-radius: 8px;
+ margin-top: 10px;
+}
+
+.uploaded-image-preview+.uploaded-image-preview {
+ margin-top: 15px;
+}

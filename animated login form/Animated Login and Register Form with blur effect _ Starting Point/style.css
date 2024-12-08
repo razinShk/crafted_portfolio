@@ -1,0 +1,159 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ====== BASE ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+      /* rocket panel */
+
+.left-panel {
+    flex: 1;
+    background: rgba(226, 226, 226, 0.295);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 0 30% 20% 0;
+    transition: border-radius 0.3s;
+}
+.image-layer{
+position: relative;
+
+}
+
+.white-outline{
+    width: 400px;
+}
+.photo{
+    position:absolute ;
+
+}
+
+.left-panel img {
+    height: 300px;
+    width: auto;
+}
+
+.left-panel .rocket {
+    margin-bottom: 20px;
+}
+
+      /* Right side  */
+
+
+.right-panel {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.form-container button:hover {
+    transform: scale(1.05);
+}
+
+#signInBtn,
+#signUpBtn {
+    background-color: #2196F3;
+}
+
+#forgotPassword {
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.social-icons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
+
+@keyframes rocketFly {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+    

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Feedback Form - Crafted Portfolio</title>
+ <style>
+  body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+  }
+
+  .container {
+   background-color: #ffffff;
+   padding: 2rem;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   max-width: 400px;
+  }
+
+  h1 {
+   color: #333;
+   margin-bottom: 1.5rem;
+   text-align: center;
+  }
+
+  form {
+   display: flex;
+   flex-direction: column;
+  }
+
+  label {
+   margin-bottom: 0.5rem;
+   color: #555;
+  }
+
+  input,
+  textarea,
+  select {
+   padding: 0.5rem;
+   margin-bottom: 1rem;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   font-size: 1rem;
+  }
+
+  textarea {
+   resize: vertical;
+   min-height: 100px;
+  }
+
+  button {
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   padding: 0.75rem;
+   font-size: 1rem;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+   background-color: #45a049;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="container">
+  <h1>Feedback Form</h1>
+  <form id="feedbackForm">
+   <label for="name">Name:</label>
+   <input type="text" id="name" name="name" required>
+
+   <label for="email">Email:</label>
+   <input type="email" id="email" name="email" required>
+
+   <label for="category">Feedback Category:</label>
+   <select id="category" name="category" required>
+    <option value="">Select a category</option>
+    <option value="general">General Feedback</option>
+    <option value="bug">Bug Report</option>
+    <option value="feature">Feature Request</option>
+    <option value="other">Other</option>
+   </select>
+
+   <label for="message">Your Feedback:</label>
+   <textarea id="message" name="message" required></textarea>
+
+   <label for="rating">Rate your experience (1-5):</label>
+   <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+   <button type="submit">Submit Feedback</button>
+  </form>
+ </div>
+
+ <script>
+  document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+   e.preventDefault();
+   // Here you would typically send the form data to your server
+   alert('Thank you for your feedback!');
+   this.reset();
+  });
+ </script>
+</body>
+
+</html>

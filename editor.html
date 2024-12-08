@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="editor.css">
+ <title>Profile Editor</title>
+</head>
+
+<body>
+ <div class="container">
+  <div class="tabs">
+   <div class="tab active">Basic info</div>
+   <div class="tab">Links</div>
+   <div class="tab">Featured works</div>
+   <div class="tab">Testimonials</div>
+   <div class="tab">Settings</div>
+  </div>
+  <div class="content">
+   <h2>Basic info</h2>
+   <div class="upload-section">
+    <h3>Profile pictures *</h3>
+    <div class="upload-container">
+     <div class="upload-box">
+      <span class="upload-icon">Upload photo</span>
+      <input type="file" class="file-input" accept="image/*">
+     </div>
+     <div class="uploaded-image">
+      <img src="img/profile1.png" alt="Profile 1">
+      <span class="delete-icon">✕</span>
+     </div>
+     <div class="uploaded-image">
+      <img src="img/sharukh.jpeg" alt="Profile 2">
+      <span class="delete-icon">✕</span>
+     </div>
+     <div class="uploaded-image">
+      <img src="img/razin.jpeg" alt="Profile 3">
+      <span class="delete-icon">✕</span>
+     </div>
+    </div>
+   </div>
+   <div class="upload-section">
+    <h3>Cover images *</h3>
+    <div class="upload-container">
+     <div class="upload-box">
+      <span class="upload-icon">Upload photo</span>
+      <input type="file" class="file-input" accept="image/*">
+     </div>
+     <div class="uploaded-image">
+      <img src="img/cover1.jpg" alt="Cover 1">
+      <span class="delete-icon">✕</span>
+     </div>
+    </div>
+   </div>
+   <div class="form-section">
+    <div class="form-group">
+     <label for="first-name">First name *</label>
+     <input type="text" id="first-name" placeholder="Razin">
+    </div>
+    <div class="form-group">
+     <label for="last-name">Last name *</label>
+     <input type="text" id="last-name" placeholder="Shaikh">
+    </div>
+
+   </div>
+       <div class="form-group">
+        <label for="last-name">Job Type *</label>
+        <input type="text" id="last-name" placeholder="Freelance Designer">
+       </div>
+       <div class="form-group">
+        <label for="last-name">About *</label>
+        <input type="text" id="last-name" placeholder="I'm a passionate Graphic Designer and Illustrator ">
+       </div>
+       <h3>Content Manager *</h3>
+  </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+
+</html>

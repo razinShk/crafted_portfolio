@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Crafted Portfolio</title>
+
+ <link rel="stylesheet" href="wholenew.css">
+</head>
+
+<body>
+ 
+ <div class="container" id="page1">
+  <div class="logo">
+   <img src="img/crafted%20portfolio%20logo.png" alt="Crafted Portfolio Logo" width="111" height="30">
+  </div>
+  <h1>Sign in to your account</h1>
+  <a href="#page2" class="button google-button">Continue with Google</a>
+  <div class="divider">or</div>
+  <form
+   onsubmit="event.preventDefault(); document.getElementById('page1').style.display='none'; document.getElementById('page2').style.display='block';">
+   <input type="email" placeholder="Email" required>
+   <input type="password" placeholder="Password" required>
+   <button type="submit" class="button primary-button">Sign In</button>
+  </form>
+  <div class="form-footer">
+   <label><input type="checkbox"> Remember me</label>
+   <a href="go home haha">Forgot Password?</a>
+  </div>
+  <p>Don't have an account? <a href="go gome haha">Register</a></p>
+ <a href="https://my.visme.co/view/vd6qz363-crafted-portfolio-presentation#s1">Presentation</a>
+ </div>
+
+  <!-- second Page starts here -->
+   
+ <div class="container" id="page2" style="display:none;">
+  <div class="logo">
+   Take your Bio Digital
+  </div>
+  <img src="img/ladder%20man.jpeg" alt="Person on ladder illustration" class="illustration">
+  <h1>Create your first site</h1>
+  <p>Build a portfolio to show who you are and what you're made of.</p>
+  <!-- <a href="templates.html" class="button primary-button">+ Create new site</a> -->
+  <a href="template.html" class="button primary-button">+ Create new site</a>
+ </div>
+
+ <div class="profile-icon">R</div>
+
+ <script>
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+   anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).style.display = 'block';
+    document.querySelector(this.getAttribute('href') === '#page2' ? '#page1' : '#page2').style.display = 'none';
+   });
+  });
+ </script>
+</body>
+
+</html>

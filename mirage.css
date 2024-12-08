@@ -1,0 +1,153 @@
+.form-container {
+ width: 45%;
+ background-color: white;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input,
+.form-container textarea {
+ width: 100%;
+ padding: 8px;
+ margin-bottom: 10px;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+}
+
+#saveButton {
+ background-color: #16172E;
+ color: #F9F9FF;
+ padding: 12px 24px;
+ border: none;
+ border-radius: 9999px;
+ cursor: pointer;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+
+body {
+ font-family: Halant, sans-serif;
+ background-color: #F9F9FF;
+ color: #16172E;
+ /* max-width: 480px; */
+ margin: 0 auto;
+}
+
+.form-container {
+ width: 45%;
+ background-color: white;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input,
+.form-container textarea {
+ width: 100%;
+ padding: 8px;
+ margin-bottom: 10px;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+}
+
+.daddy {
+ display: flex;
+}
+
+.inside {
+ max-height: 90vh;
+ height: 500px;
+ width: 350px;
+ overflow: scroll;
+ border: 15px solid rgb(112, 112, 112);
+ border-radius: 10px;
+}
+
+.container {
+ padding: 16px;
+ /* width: 100%; */
+}
+
+.avatar {
+ width: 120px;
+ height: 120px;
+ border-radius: 50%;
+}
+
+.name {
+ font-family: Forum, serif;
+ font-size: 32px;
+ font-weight: 400;
+ line-height: 138%;
+}
+
+.title {
+ font-family: Forum, serif;
+ font-size: 20px;
+ font-weight: 400;
+ line-height: 150%;
+ text-decoration: underline 8px #ED9ED6;
+}
+
+.description {
+ font-size: 18px;
+ line-height: 160%;
+ color: rgba(22, 23, 46, 0.7);
+}
+
+.social-icons {
+ display: flex;
+ gap: 8px;
+}
+
+.button {
+ margin: 5px;
+ background-color: #16172E;
+ color: #F9F9FF;
+ padding: 12px 24px;
+ border-radius: 9999px;
+ text-align: center;
+ cursor: pointer;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+
+.portfolio-item {
+ text-align: center;
+ margin-bottom: 32px;
+}
+
+.portfolio-item img {
+ width: 100%;
+ height: auto;
+}
+
+.testimonial {
+ text-align: center;
+ margin-bottom: 24px;
+}
+
+                .feedback-button {
+                 position: fixed;
+                 bottom: 20px;
+                 right: 20px;
+                 background-color: #4CAF50;
+                 color: white;
+                 border: none;
+                 padding: 0.75rem 1.5rem;
+                 font-size: 1rem;
+                 border-radius: 4px;
+                 cursor: pointer;
+                 transition: background-color 0.3s ease, transform 0.2s ease;
+                 text-align: center;
+                 text-decoration: none;
+                 display: inline-block;
+                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                 z-index: 1000;
+                }
+        
+                .feedback-button:hover {
+                 background-color: #45a049;
+                 transform: translateY(-2px);
+                }
